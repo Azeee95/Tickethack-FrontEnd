@@ -97,8 +97,6 @@ searchButton.addEventListener('click', () => {
 
           //      let dateTrip = new Date(data[i].$date)
 
-                console.log(data[i].$date);
-
                 document.querySelector("#resultcart").innerHTML += ` 
             
                 <nav aria-label="breadcrumb">
@@ -124,7 +122,7 @@ searchButton.addEventListener('click', () => {
                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                         </svg>
                 
-                        <a class="link-body-emphasis text-decoration-none"> ${data[i].$date} </a>
+                        <a class="link-body-emphasis text-decoration-none"> 13:43 </a>
                         
                       </li>
                 
