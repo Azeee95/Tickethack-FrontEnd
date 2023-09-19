@@ -38,4 +38,3 @@ const tableTrips = [
 
 ]
 
-document.querySelector('')
