@@ -40,20 +40,20 @@
             <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
 
               <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="Departure">
+                <input type="text" class="form-control" id="departure" placeholder="Departure">
                 <label for="floatingInput">Departure</label>
               </div>
 
               <div class="form-floating mb-3">
-                <input type="password" class="form-control" placeholder="Arrival">
+                <input type="text" class="form-control" id="arrival" placeholder="Arrival">
                 <label for="floatingPassword">Arrival</label>
               </div>
 
               <div class="form-floating mb-3">
-                <input type="date" class="form-control"  placeholder="Arrival">
+                <input type="date" class="form-control" id="date" placeholder="date">
               </div>
 
-              <button class="w-100 btn btn-lg btn-success" type="submit">Search</button>
+              <button class="w-100 btn btn-lg btn-success" type="submit" id="search">Search</button>
               
               
             </form>
@@ -87,14 +87,14 @@
             </form>
           </div>
 
-          <div id="container" class="col-md-10 mx-auto col-lg-5">
+          <div id="flex-container" class="col-md-10 mx-auto col-lg-5">
             <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
                 <div>
                   <div class="item">Departure</div>
                   <div class="item">Arrival</div>
                   <div class="item">Hours</div>
                   <div class="item">Price</div>
-                  <button class="w-100 btn btn-lg btn-success" type="submit">Book</button>
+                  <button class="w-100 btn btn-lg btn-success" type="submit" id="book">Book</button>
                 </div>
                 
             </form>
