@@ -76,9 +76,13 @@ searchButton.addEventListener('click', () => {
            if (data[1]) {
 
             alert('plusieurs résultats')
-            
-           }
 
+           } else {
+
+            document.querySelector('#img-default').src = './images/notfound.png'
+            document.querySelector('#infosearch').textContent = 'No trip found'
+
+           }
 
 
          });
