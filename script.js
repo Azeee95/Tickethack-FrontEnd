@@ -49,6 +49,32 @@ searchButton.addEventListener('click', () => {
     if (departureValue.trim() && arrivalValue.trim() && dateValue.trim()) {
 
         console.log(`Departure : ${departureValue} - Arrival : ${arrivalValue} - Date : ${dateValue}`);
+        
+        const dataSearch = {
+
+            departure: departureValue,
+        
+            arrival: arrivalValue,
+
+            date: dateValue
+        
+        }
+        
+        fetch('https://tickethack-back-end.vercel.app/trips/search', {
+        
+            method: 'POST',
+        
+            headers: { 'Content-Type': 'application/json' },
+        
+            body: JSON.stringify(dataSearch)
+        
+        })
+         .then(response => response.json())
+         .then(data => {
+           console.log(data);
+         });
+
+    
     }
 
 });
