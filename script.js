@@ -38,3 +38,20 @@ const tableTrips = [
 
 ]
 
+let searchButton = document.querySelector('#search')
+
+searchButton.addEventListener('click', () => {
+
+    let departureValue = document.querySelector('#departure').value;
+    let arrivalValue = document.querySelector('#arrival').value;
+    let dateValue = document.querySelector('#date').value;
+    
+    if (departureValue.trim() && arrivalValue.trim() && dateValue.trim()) {
+
+        console.log(`Departure : ${departureValue} - Arrival : ${arrivalValue} - Date : ${dateValue}`);
+    }
+
+});
+
+
+
