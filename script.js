@@ -95,7 +95,7 @@ searchButton.addEventListener('click', () => {
 
             for (let i = 1; i < data.length; i++) {
 
-                let dateTrip = new Date (data.date.$date)
+                let dateTrip = new Date(data[i].date[$date])
 
                 let hourTrip = dateTrip.getHours();
                 let minutesTrip = dateTrip.getMinutes();
