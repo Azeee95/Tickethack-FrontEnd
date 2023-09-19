@@ -44,13 +44,13 @@
                 <label for="floatingInput">Departure</label>
               </div>
 
-              <div class="form-floating mb-3" id = "arrival">
-                <input type="text" class="form-control" id="floatingPassword" placeholder="Arrival">
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Arrival">
                 <label for="floatingPassword">Arrival</label>
               </div>
 
-              <div class="form-floating mb-3" id = "date">
-                <input type="date" class="form-control" id="floatingPassword" placeholder="Date">
+              <div class="form-floating mb-3">
+                <input type="date" class="form-control" id="floatingPassword" placeholder="Arrival">
               </div>
 
               <button class="w-100 btn btn-lg btn-success" type="submit" id = "search">Search</button>
@@ -62,7 +62,7 @@
           <div class="col-md-10 mx-auto col-lg-5 containerzone">
             <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
                  <div>
-                  <img src="images/train.png" id="center-train">
+                  <img src="images/train.png" class="center-train">
                   <br>
                   <br>
                  
@@ -72,6 +72,36 @@
                  <p class="textp">it's time to book for future trip.</p>
             </form>
           </div>
+
+          <div class="col-md-10 mx-auto col-lg-5 containerzone">
+            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                 <div>
+                  <img src="images/notfound.png" class="center-train">
+                  <br>
+                  <br>
+                 
+               
+                 </div>
+                 <hr class="my-4">
+                 <p class="textp">Not Found</p>
+            </form>
+          </div>
+
+          <div id="container" class="col-md-10 mx-auto col-lg-5">
+            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                <div>
+                  <div class="item">Departure</div>
+                  <div class="item">Arrival</div>
+                  <div class="item">Hours</div>
+                  <div class="item">Price</div>
+                  <button class="w-100 btn btn-lg btn-success" type="submit">Book</button>
+                </div>
+                
+            </form>
+          </div>
+
+
+
 
         </div>
       </div>
