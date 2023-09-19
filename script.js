@@ -93,7 +93,7 @@ searchButton.addEventListener('click', () => {
 
             document.querySelector("#resultcart").innerHTML ='';
 
-            for (let i = 0; i < 5; i++) {
+            for (let i = 1; i < data.length; i++) {
 
                 document.querySelector("#resultcart").innerHTML += ` 
             
@@ -102,7 +102,7 @@ searchButton.addEventListener('click', () => {
                     <ol class="breadcrumb breadcrumb-chevron p-3 bg-primary-subtle border border-primary-subtle rounded-3">
                       
                         <li>
-                            <a class="link-body-emphasis text-decoration-none">Paris</a>
+                            <a class="link-body-emphasis text-decoration-none">${data[i].departure}</a>
                         </li>
                 
                       <li>
@@ -111,7 +111,7 @@ searchButton.addEventListener('click', () => {
                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                         </svg>
                 
-                        <a class="link-body-emphasis text-decoration-none">Marseille</a>
+                        <a class="link-body-emphasis text-decoration-none">${data[i].arrival}</a>
                       </li>
                       
                       <li>
@@ -120,7 +120,7 @@ searchButton.addEventListener('click', () => {
                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                         </svg>
                 
-                        <a class="link-body-emphasis text-decoration-none">18:37</a>
+                        <a class="link-body-emphasis text-decoration-none">16:47</a>
                         
                       </li>
                 
@@ -130,7 +130,7 @@ searchButton.addEventListener('click', () => {
                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                         </svg>
                 
-                        <a class="link-body-emphasis text-decoration-none">144 € </a>
+                        <a class="link-body-emphasis text-decoration-none">${data[i].price} € </a>
                         
                       </li>
                 
