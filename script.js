@@ -11,7 +11,7 @@ fetch('http://localhost:3000/trips')
 
  */
 
-fetch('https://tickethack-back-end.vercel.app/trips')
+fetch(`${backendURL}/trips`)
 .then(response => response.json())
 .then(data => {
   console.log(data);
