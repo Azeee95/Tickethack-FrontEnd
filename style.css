@@ -102,3 +102,15 @@ h1 {
 .invisible {
     display : none
 }
+
+
+.cartsize {
+
+    height: 400px;
+    width: 500px;
+}
+
+#resultcart {
+
+    overflow-y: scroll
+}

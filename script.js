@@ -73,17 +73,82 @@ searchButton.addEventListener('click', () => {
          .then(data => {
            console.log(data);
 
-           if (data[1]) {
+           if (!data[1]) {
 
-            alert('plusieurs résultats')
+            document.querySelector('#resultcart').innerHTML = ` 
+            
+            <div>
+
+            <img src="./images/notfound.png" class="center-train" id = "img-default">
+
+           </div>
+           <hr class="my-4">
+           <p class="textp" id ="infosearch"> No trip found </p>
+
+          </div>
+
+            `
 
            } else {
 
-            document.querySelector('#img-default').src = './images/notfound.png'
-            document.querySelector('#infosearch').textContent = 'No trip found'
+            document.querySelector("#resultcart").innerHTML ='';
 
-           }
+            for (let i = 0; i < 5; i++) {
 
+                document.querySelector("#resultcart").innerHTML += ` 
+            
+                <nav aria-label="breadcrumb">
+                
+                    <ol class="breadcrumb breadcrumb-chevron p-3 bg-primary-subtle border border-primary-subtle rounded-3">
+                      
+                        <li>
+                            <a class="link-body-emphasis text-decoration-none">Paris</a>
+                        </li>
+                
+                      <li>
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                
+                        <a class="link-body-emphasis text-decoration-none">Marseille</a>
+                      </li>
+                      
+                      <li>
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                
+                        <a class="link-body-emphasis text-decoration-none">18:37</a>
+                        
+                      </li>
+                
+                      <li>
+                
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                
+                        <a class="link-body-emphasis text-decoration-none">144 € </a>
+                        
+                      </li>
+                
+                
+                      <li class="breadcrumb-item active" aria-current="page">
+                
+                        <button type="button" class="btn btn-success" style = 'margin-left: 40px;'>Book</button>
+                      
+                    </li>
+                
+                    </ol>
+                  </nav>
+                `
+            
+            }
+
+
+        }
 
          });
 

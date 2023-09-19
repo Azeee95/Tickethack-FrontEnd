@@ -37,7 +37,8 @@
         <div class="row align-items-center g-lg-5 py-5 ">
           
           <div class="col-md-10 mx-auto col-lg-5 containerzone">
-            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+
+            <div class="p-4 p-md-5 border rounded-3 bg-body-tertiary cartsize">
 
               <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="departure" placeholder="Departure">
@@ -55,11 +56,14 @@
 
               <button class="w-100 btn btn-lg btn-success" type = "button" id = "search">Search</button>
               
-            </form>
+            </div>
+
           </div>
 
           <div class="col-md-10 mx-auto col-lg-5 containerzone">
-            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+
+            <div class="p-4 p-md-5 border rounded-3 bg-body-tertiary cartsize" id = "resultcart">
+
                  <div>
 
                   <img src="images/train.png" class="center-train" id = "img-default">
@@ -67,37 +71,12 @@
                  </div>
                  <hr class="my-4">
                  <p class="textp" id ="infosearch">it's time to book for future trip.</p>
-            </form>
-          </div>
 
-          <div class="col-md-10 mx-auto col-lg-5 containerzone invisible">
-            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-                 <div>
-
-                  <img src="images/notfound.png" class="center-train" id = "img-default2">
-               
-                 </div>
-
-                 <hr class="my-4">
-                 <p class="textp">Not Found</p>
-            </form>
-          </div>
-
-          <div id="flex-container" class="col-md-10 mx-auto col-lg-5 invisible">
-            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-                <div>
-                  <div class="item">Departure</div>
-                  <div class="item">Arrival</div>
-                  <div class="item">Hours</div>
-                  <div class="item">Price</div>
-                  <button class="w-100 btn btn-lg btn-success" type="submit" id="book">Book</button>
                 </div>
-                
-            </form>
+
           </div>
 
-
-
+          </div>
 
         </div>
       </div>
