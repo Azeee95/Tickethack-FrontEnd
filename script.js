@@ -1,6 +1,8 @@
 const backendURL = 'https://tickethack-back-end.vercel.app/' + 'trips'
 const frontendURL = 'https://tickethack-front-end.vercel.app/'
 
+const moment = require('moment');
+
 /*
 fetch('http://localhost:3000/trips')
  .then(response => response.json())
@@ -96,10 +98,8 @@ searchButton.addEventListener('click', () => {
             for (let i = 1; i < data.length; i++) {
 
                 let dateTrip = new Date(data[i].$date)
-                console.log(dateTrip.getHours() + ' : ' + dateTrip.getMinutes());
 
-                let hourTrip = dateTrip.getHours();
-                let minutesTrip = dateTrip.getMinutes();
+                console.log(moment(dateTrip).format('LT'));
 
                 document.querySelector("#resultcart").innerHTML += ` 
             
