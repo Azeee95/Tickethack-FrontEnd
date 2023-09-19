@@ -96,10 +96,8 @@ searchButton.addEventListener('click', () => {
             for (let i = 1; i < data.length; i++) {
 
                 let dateTrip = new Date(data[i].date)
-                let hourTrip = dateTrip.getHours();
-                let minutesTrip = dateTrip.getMinutes();
 
-                console.log(hourTrip + ' : ' + minutesTrip);
+                console.log(data[i].date);
 
                 document.querySelector("#resultcart").innerHTML += ` 
             
