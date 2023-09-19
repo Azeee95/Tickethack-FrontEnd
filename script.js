@@ -72,6 +72,15 @@ searchButton.addEventListener('click', () => {
          .then(response => response.json())
          .then(data => {
            console.log(data);
+
+           if (data[1]) {
+
+            alert('plusieurs résultats')
+            
+           }
+
+
+
          });
 
     
