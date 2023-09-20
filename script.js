@@ -97,7 +97,7 @@ searchButton.addEventListener('click', () => {
 
                 let dateTrip = new Date(data[i].date);
 
-                console.log(dateTrip);
+                console.log(dateTrip.getHours() + ' : ' + dateTrip.getMinutes());
 
                 document.querySelector("#resultcart").innerHTML += ` 
             
