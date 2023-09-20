@@ -153,14 +153,17 @@ searchButton.addEventListener('click', () => {
             
             }
 
+            let bookButton = document.querySelectorAll('.btn-book')
+        
+            bookButton.addEventListener('click', () => { 
+    
+                console.log('button clicked');
+    
+            })
+
+
         } 
         
-        let bookButton = document.querySelectorAll('.btn-book').addEventListener('click', () ={ 
-
-            console.log('button clicked');
-
-        })
-
 
          });
         
