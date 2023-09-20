@@ -137,7 +137,7 @@
 
                 // Refresh du total
 
-                const priceElements = document.querySelectorAll('.price')
+                /* const priceElements = document.querySelectorAll('.price')
                 
                 let newtotalprice = 0
 
@@ -147,7 +147,7 @@
 
                 newtotalprice = newtotalprice + +(priceelement[i].text.trim().slice(0, this.length-1).trim())
 
-                })
+                }) */
 
             })
 
