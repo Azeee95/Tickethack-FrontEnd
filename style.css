@@ -139,6 +139,8 @@ h1 {
 /* bloc et police centré */
 .center-div {
     background-color: #FFFEFF;
+    align-items: center;
+    align-content: center;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -179,4 +181,9 @@ h1 {
     flex-direction: column;
     align-content:center;
     overflow-y: scroll
+}
+
+#containercart {
+    align-items: center;
+    align-content: center;
 }
