@@ -19,9 +19,6 @@
    <p> Why not plan a trip ? </p> 
    
    `
-   
-
-
     } else {
     
         console.log('Résultats disponibles')
@@ -153,18 +150,18 @@
 
                 })
 
-                document.querySelector('#totalcart').textContent = `Total : ${newtotalprice} €`
+            })
+
+            //    document.querySelector('#totalcart').textContent = `Total : ${newtotalprice} €`
 
         })
 
+    
          // --
 
-
-
     })
+    
+    }
+})
 
-}
-
-
-});
 
