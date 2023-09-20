@@ -212,7 +212,7 @@ searchButton.addEventListener('click', () => {
  fetch('https://tickethack-back-end.vercel.app/trips/cart')
  .then(response => response.json())
  .then(cartData => {
-   console.log(['Cart',  cartData]);
+   console.log(cartData);
  });
 
  
