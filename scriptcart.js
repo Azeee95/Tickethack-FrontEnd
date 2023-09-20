@@ -74,7 +74,7 @@
                   
                         <li class="breadcrumb-item active" aria-current="page">
                   
-                          <button type="submit" class="btn btn-success btn-delete" style = 'margin-left: 10rem;' id = ID${cartData[i]._id}>X</button>
+                          <button type="button" class="btn btn-success btn-delete" style = 'margin-left: 10rem;' id = ID${cartData[i]._id}>X</button>
                         
                       </li>
                   
