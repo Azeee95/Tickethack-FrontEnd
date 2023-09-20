@@ -161,9 +161,10 @@ searchButton.addEventListener('click', () => {
             const elements = document.querySelectorAll('.btn-book');
 
             elements.forEach(element => {
+
                 element.addEventListener('click', () => {
 
-                    console.log(this.id.value);
+                    console.log(element.id);
 
                 })
                 
