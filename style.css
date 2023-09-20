@@ -1,16 +1,58 @@
 /* INDEX.HTML*/
 
+.tickethack {
+    color: #167347 ;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.cartbooking {
+   color: black;
+   align-items: baseline;
+   margin-top: 10px;
+   
+}
+
 
 
 #flex-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between; /* Répartit les éléments horizontalement avec un espace égal entre eux */
-    align-items: center; /* Centre les éléments verticalement */
+    align-items: baseline; /* Centre les éléments verticalement */
     background-color: #f0f0f0; /* Arrière-plan du conteneur */
-    padding: 10px; /* Ajoute un peu d'espace autour des éléments */
+    width: 100%;
+}
+/*essai sans la balise <form>*/
+#flex-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline; /* Centre les éléments verticalement */
+    background-color: #f0f0f0; /* Arrière-plan du conteneur */
+    /*width: 100%;*/
+    width: 300px;
+    
+    border-radius: 7px 7px 7px 7px;
 }
 
+
+
+
+.item {
+    
+    margin-right: 3px; /* Add margin to create space between items */
+}
+
+
+
+/* Style for the scrollable div */
+.scrollable-div {
+     
+    height: 350px; /* Set the height of the div */
+    overflow:scroll; /* Add a scrollbar when content overflows the div */
+    
+}
 
 
 .header {
@@ -22,11 +64,9 @@ h1 {
     text-align: center;
 }
 
-.title {
-    height: 10px;
-}
 
-.ptitle {
+
+.titre {
     border: 2px solid  blue;
     text-align: center;
 }
@@ -36,6 +76,7 @@ h1 {
 }
 
 .containerzone {
+    
     border: 2px solid red;
 
 }
@@ -52,7 +93,7 @@ h1 {
      /* Styles pour l'arrière-plan des pages vide cart et bookings */
 #bodyempty{
     background-color: #F3F3F4;
-     
+    
 }
 
 .center-train {
@@ -66,12 +107,9 @@ h1 {
     /* border: 1px solid #ccc; Optionnel : ajoutez une bordure pour mieux voir la div */
 }
 
-/* taille des bloc container droite*/
-.cartzone {
-  
-    min-width: 400px;
-    min-height: 343px;
 
+.line {
+    color: #167347 ;
 }
 
 /* taille du bloc container gauche */
@@ -94,11 +132,29 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
-.cartzone {
+
+.cartsize {
+    
     min-width: 1000px;
-    min-height: 200px;
+    min-height: 20%;
+}
+
+.cartsize2 {
+    display: flex;
+    min-width: 1000px;
+    
+    
+}
+
+.total {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    background-color: #001648;
 }
 
 .invisible {
     display : none
 }
+
+
