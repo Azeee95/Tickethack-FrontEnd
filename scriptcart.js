@@ -19,6 +19,8 @@
    <p> Why not plan a trip ? </p> 
    
    `
+   
+
 
     } else {
     
@@ -68,14 +70,14 @@
                               <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                           </svg>
                   
-                          <a class="link-body-emphasis text-decoration-none">${cartData[i].price} € </a>
+                          <a class="link-body-emphasis text-decoration-none price">${cartData[i].price} € </a>
                           
                         </li>
                   
                   
                         <li class="breadcrumb-item active" aria-current="page">
                   
-                          <button type="submit" class="btn btn-success btn-delete" style = 'margin-left: 10rem;' id = ID${cartData[i]._id}>X</button>
+                          <button type="button" class="btn btn-success btn-delete" style = 'margin-left: 10rem;' id = ID${cartData[i]._id}>X</button>
                         
                       </li>
                   
@@ -107,7 +109,7 @@
 
             // Suppression du trip de la liste des résultats du cart
 
-            document.querySelector(idSelector).parentNode.parentNode.hidden=true
+            document.querySelector(idSelector).parentNode.parentNode.remove();
     
             // Suppression du trip du panier
 
@@ -131,6 +133,27 @@
                 console.log(data);
 
                 })
+                .then (() => {
+
+                console.log('Refresh du total nécessaire');
+
+                // document.querySelector('#totalcart').textContent = `Total : ${totalCart} €`
+
+                // Refresh du total
+
+                const priceElements = document.querySelectorAll('.price')
+                
+                let newtotalprice = 0
+
+                priceElements.forEach(priceelement => {
+                
+                console.log(newtotalprice);
+
+                newtotalprice = newtotalprice + +(priceelement[i].text.trim().slice(0, this.length-1).trim())
+
+                })
+
+                document.querySelector('#totalcart').textContent = `Total : ${newtotalprice} €`
 
         })
 
