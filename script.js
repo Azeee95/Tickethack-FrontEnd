@@ -93,13 +93,15 @@ searchButton.addEventListener('click', () => {
 
             document.querySelector("#resultcart").innerHTML ='';
 
+            let tabresult = []
+
             for (let i = 1; i < data.length; i++) {
 
                // let dateTrip = new Date(data[i].date);
 
               //  console.log((data[i].date).substr(11, 5));
-
-              console.log(data[i]._id); 
+                
+                tabresult.push(data[i]._id);
 
                 document.querySelector("#resultcart").innerHTML += ` 
             
@@ -154,6 +156,7 @@ searchButton.addEventListener('click', () => {
             }
 
             
+            console.log(tabresult); 
 
         } 
         
