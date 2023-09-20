@@ -6,9 +6,7 @@
  .then(cartData => {
    console.log(cartData);
 
-   /*
-
-   if (cartData[0]) {
+   if (cartData) {
 
     console.log('Résultats disponibles')
 
@@ -17,8 +15,6 @@
     console.log('Panier vide')
     
     }
-
-    */
 
  });
 
