@@ -188,3 +188,19 @@ h1 {
     align-content: center;
 }
 
+
+/*------------------------------------------------------------------------------------------------------*/
+
+/* Bookings.HTML */
+
+#bookingcontainer {
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+p1 {
+    color: #167347 ;
+    font-weight: bold;
+    
+}
