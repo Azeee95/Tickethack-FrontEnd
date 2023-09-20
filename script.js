@@ -131,7 +131,7 @@ searchButton.addEventListener('click', () => {
                 
                       <li class="breadcrumb-item active" aria-current="page">
                 
-                        <button type="button" class="btn btn-success btn-book" style = 'margin-left: 40px' id = ID${data[i]._id}> <a href="./cart.html">Book </button>
+                        <button type="button" class="btn btn-success btn-book" style = 'margin-left: 40px' id = ID${data[i]._id}> Book </button>
                       
                     </li>
                 
