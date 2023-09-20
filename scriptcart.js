@@ -128,13 +128,8 @@
 
 
             })
-                .then(response => response.json())
-                .then(data => {
-
-                console.log(data);
-
-                })
-                .then (() => {
+            .then(response => response.json())
+            .then (() => {
 
                 console.log('Refresh du total nécessaire');
 
@@ -142,7 +137,7 @@
 
                 // Refresh du total
 
-                const priceElements = document.querySelectorAll('.price')
+                /* const priceElements = document.querySelectorAll('.price')
                 
                 let newtotalprice = 0
 
@@ -152,7 +147,7 @@
 
                 newtotalprice = newtotalprice + +(priceelement[i].text.trim().slice(0, this.length-1).trim())
 
-                })
+                }) */
 
             })
 
@@ -161,7 +156,7 @@
         })
 
     
-         // --
+         
 
     })
 
