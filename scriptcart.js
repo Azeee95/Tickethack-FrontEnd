@@ -21,7 +21,7 @@
    `
 
    document.querySelector('#totalcontainer').classList.add('invisible');
-   
+
     } else {
     
         console.log('Résultats disponibles')
@@ -168,3 +168,9 @@
 })
 
 
+document.querySelector('#btn-purchase').addEventListener('click', () => {
+
+console.log('Button purchase clicked');
+
+
+})
