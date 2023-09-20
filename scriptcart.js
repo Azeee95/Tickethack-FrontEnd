@@ -157,7 +157,7 @@
 
             //    document.querySelector('#totalcart').textContent = `Total : ${newtotalprice} €`
 
-        })
+        })//
 
     
          // --
