@@ -128,11 +128,7 @@
 
             })
                 .then(response => response.json())
-                .then(data => {
-
-                console.log(data);
-
-                })
+                
                 .then (() => {
 
                 console.log('Refresh du total nécessaire');
