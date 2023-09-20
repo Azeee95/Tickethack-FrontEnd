@@ -209,7 +209,7 @@ searchButton.addEventListener('click', () => {
 
  // Récup de l'ensemble des trips disponibles dans la base pour valider le bon fonctionnement de la route
  
- fetch('https://tickethack-back-end.vercel.app/cart')
+ fetch('https://tickethack-back-end.vercel.app/trips/cart')
  .then(response => response.json())
  .then(cartData => {
    console.log('Cart : ' + cartData);
