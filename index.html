@@ -49,7 +49,8 @@ partie droite avec les infos depart, arrivé et calendrier
         <div class="row align-items-center g-lg-5 py-5 ">
           
           <div class="col-md-10 mx-auto col-lg-5 containerzone">
-            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+
+            <div class="p-4 p-md-5 border rounded-3 bg-body-tertiary cartsize">
 
               <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="departure" placeholder="Departure">
@@ -66,10 +67,10 @@ partie droite avec les infos depart, arrivé et calendrier
                 <input type="date" class="form-control" id="date" placeholder="date">
               </div>
 
-              <button class="w-100 btn btn-lg btn-success" type="submit" id="search">Search</button>
+              <button class="w-100 btn btn-lg btn-success" type = "button" id = "search">Search</button>
               
-              
-            </form>
+            </div>
+
           </div>
 
           <!-- 
@@ -77,13 +78,13 @@ partie gauche avec par defaut un train
 ------------------------------------------------------------------------------------------------------------------------> 
 
           <div class="col-md-10 mx-auto col-lg-5 containerzone">
-            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+
+            <div class="p-4 p-md-5 border rounded-3 bg-body-tertiary cartsize" id = "resultcart">
+
                  <div>
-                  <img src="images/train.png" class="center-train">
-                  <br>
-                  <br>
-                 
-               
+
+                  <img src="images/train.png" class="center-train" id = "img-default">
+
                  </div>
                  <hr class="my-4 line">
                  <p class="textp">it's time to book for future trip.</p>

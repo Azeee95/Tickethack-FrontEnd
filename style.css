@@ -158,3 +158,13 @@ h1 {
 }
 
 
+.cartsize {
+
+    height: 300px;
+    width: 400px;
+}
+
+#resultcart {
+
+    overflow-y: scroll
+}
