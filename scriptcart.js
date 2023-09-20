@@ -19,6 +19,9 @@
    <p> Why not plan a trip ? </p> 
    
    `
+
+   document.querySelector('#totalcontainer').classList.add('invisible');
+   
     } else {
     
         console.log('Résultats disponibles')
@@ -160,7 +163,7 @@
          // --
 
     })
-    
+
     }
 })
 
