@@ -74,7 +74,7 @@
                   
                         <li class="breadcrumb-item active" aria-current="page">
                   
-                          <button type="button" class="btn btn-success" style = 'margin-left: 10rem;' id = 'btn-delete' >X</button>
+                          <button type="button" class="btn btn-success btn-delete" style = 'margin-left: 10rem;' id = ID${cartData[i]._id}>X</button>
                         
                       </li>
                   
@@ -90,10 +90,57 @@
     console.log('Total : ' + totalCart);
     document.querySelector('#totalcart').textContent = `Total : ${totalCart} €`
 
-    }
+
+    // Sélection des boutons pour supprimer les trips dans le cart et activation de l'eventListener
+
+    const elements = document.querySelectorAll('.btn-delete');
+
+    elements.forEach(element => {
+
+        element.addEventListener('click', () => {
+
+            let idSelector = '#' + element.id;
+            let finalId = idSelector.substring(3, idSelector.length);
+
+            console.log(finalId);
+
+            // Suppression du trip de la liste des résultats du cart
+
+            document.querySelector(idSelector).parentNode.parentNode.hidden=true
+    
+            // Suppression du trip du panier
+
+            const dataCart = {
+
+                _id: finalId
+            
+            }
+
+            fetch('https://tickethack-back-end.vercel.app/trips/deletecart', {      
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+
+            body: JSON.stringify(dataCart)
 
 
- });
+            })
+                .then(response => response.json())
+                .then(data => {
+
+                console.log(data);
+
+                })
+
+        })
+
+         // --
 
 
- 
+
+    })
+
+}
+
+
+});
+
