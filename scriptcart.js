@@ -127,9 +127,8 @@
 
 
             })
-                .then(response => response.json())
-                
-                .then (() => {
+            .then(response => response.json())
+            .then (() => {
 
                 console.log('Refresh du total nécessaire');
 
@@ -153,10 +152,10 @@
 
             //    document.querySelector('#totalcart').textContent = `Total : ${newtotalprice} €`
 
-        })//
+        })
 
     
-         // --
+         
 
     })
 
