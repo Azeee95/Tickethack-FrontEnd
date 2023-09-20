@@ -20,6 +20,8 @@
    
    `
 
+   document.querySelector('.totalcart').classList.add('invisible');
+
     } else {
     
         console.log('Résultats disponibles')
