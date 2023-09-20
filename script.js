@@ -143,7 +143,7 @@ searchButton.addEventListener('click', () => {
                 
                       <li class="breadcrumb-item active" aria-current="page">
                 
-                        <button type="button" class="btn btn-success btn-book" style = 'margin-left: 40px'>Book </button>
+                        <button type="button" class="btn btn-success btn-book" style = 'margin-left: 40px'> Book </button>
                       
                     </li>
                 
@@ -157,7 +157,13 @@ searchButton.addEventListener('click', () => {
         }
 
          });
+        
+         document.querySelectorAll('.btn-book').addEventListener('click', () => {
 
+            console.log('button clicked');
+
+
+         })
     
     }
 
