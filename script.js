@@ -158,6 +158,8 @@ searchButton.addEventListener('click', () => {
             
             console.log(tabresult); 
 
+            // Sélection des boutons et activation de l'eventListener
+
             const elements = document.querySelectorAll('.btn-book');
 
             elements.forEach(element => {
@@ -169,9 +171,11 @@ searchButton.addEventListener('click', () => {
 
                     console.log(finalId);
 
+                    // Suppression du trip de la liste des résultat
+
                     document.querySelector(idSelector).parentNode.parentNode.hidden=true
             
-                    // --
+                    // Ajout du trip dans le panier
 
                     const dataCart = {
 
@@ -189,7 +193,7 @@ searchButton.addEventListener('click', () => {
                     })
                         .then(response => response.json())
                         .then(data => {
-                            
+
                         console.log(data);
 
                         })
