@@ -10,6 +10,15 @@
 
     console.log('Panier vide')
 
+   document.querySelector('#carttrips').innerHTML = []
+
+   document.querySelector('#carttrips').innerHTML += `
+   
+   <p> No tickets in your cart </p>
+   <br>
+   <p> Why not plan a trip ? </p> 
+   
+   `
 
     } else {
     
