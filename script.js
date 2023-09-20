@@ -165,7 +165,9 @@ searchButton.addEventListener('click', () => {
                 element.addEventListener('click', () => {
 
                     let idSelector = '#' + element.id;
-                    console.log(idSelector.substring(3, idSelector.length));
+                    let finalId = idSelector.substring(3, idSelector.length);
+
+                    console.log(finalId);
 
                     document.querySelector(idSelector).parentNode.parentNode.hidden=true
             
@@ -189,7 +191,7 @@ searchButton.addEventListener('click', () => {
                         console.log(data);
 
                  */
-                
+
 
                          })
 
