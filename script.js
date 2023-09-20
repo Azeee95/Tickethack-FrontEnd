@@ -158,11 +158,18 @@ searchButton.addEventListener('click', () => {
             
             console.log(tabresult); 
 
-            document.querySelectorAll('.btn-book').addEventListener('click', () => {
+            const elements = document.querySelectorAll('.btn-book');
 
-                console.log(this.id.value)
+            elements.forEach(element => {
+                element.addEventListener('click', () => {
 
-            })
+                    console.log(this.id.value);
+
+                })
+                
+            });
+
+        
 
         } 
         
