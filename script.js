@@ -97,7 +97,7 @@ searchButton.addEventListener('click', () => {
 
                // let dateTrip = new Date(data[i].date);
 
-                console.log((data[i].date).substr(11, 5));
+              //  console.log((data[i].date).substr(11, 5));
 
                 document.querySelector("#resultcart").innerHTML += ` 
             
