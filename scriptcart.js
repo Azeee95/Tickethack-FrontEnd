@@ -132,8 +132,9 @@
                 })
                 .then (() => {
 
+                console.log('Refresh du total nécessaire');
                 
-                document.querySelector('#totalcart').textContent = `Total : ${totalCart} €`
+                // document.querySelector('#totalcart').textContent = `Total : ${totalCart} €`
 
 
 
