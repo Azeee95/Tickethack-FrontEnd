@@ -10,33 +10,15 @@ fetch('http://localhost:3000/trips')
 
  */
 
+ // Récup de l'ensemble des trips disponibles dans la base pour valider le bon fonctionnement de la route
+
 fetch('https://tickethack-back-end.vercel.app/trips')
 .then(response => response.json())
 .then(data => {
   console.log(data);
 });
 
-const tableTrips = [
-
-    {departure:"Marseille", arrival :"Lyon", date :{ $date :"2023-09-19T09:57:46.321Z"}, price :48, cart : false, bookings : false},
-    {departure:"Paris", arrival :"Bruxelles", date :{ $date :"2023-09-19T09:58:58.072Z"}, price :86, cart : false, bookings : false},
-    {departure:"Bruxelles", arrival :"Marseille", date :{ $date :"2023-09-19T09:59:53.956Z"}, price :30, cart : false, bookings : false},
-    {departure:"Marseille", arrival :"Lyon", date :{ $date :"2023-09-19T10:01:19.555Z"}, price :37, cart : false, bookings : false},
-    {departure:"Marseille", arrival :"Lyon", date :{ $date :"2023-09-19T10:42:50.354Z"}, price :68, cart : false, bookings : false},
-    {departure:"Bruxelles", arrival :"Paris", date :{ $date :"2023-09-19T11:16:04.496Z"}, price :111, cart : false, bookings : false},
-    {departure:"Bruxelles", arrival :"Lyon", date :{ $date :"2023-09-19T11:29:17.306Z"}, price :44, cart : false, bookings : false},
-    {departure:"Lyon", arrival :"Bruxelles", date :{ $date :"2023-09-19T11:53:11.286Z"}, price :70, cart : false, bookings : false},
-    {departure:"Bruxelles", arrival :"Paris", date :{ $date :"2023-09-19T11:59:35.327Z"}, price :75, cart : false, bookings : false},
-    {departure:"Paris", arrival :"Lyon", date :{ $date :"2023-09-19T12:00:22.812Z"}, price :43, cart : false, bookings : false},
-    {departure:"Marseille", arrival :"Bruxelles", date :{ $date :"2023-09-19T12:06:15.579Z"}, price :80, cart : false, bookings : false},
-    {departure:"Paris", arrival :"Lyon", date :{ $date :"2023-09-19T12:09:49.913Z"}, price :90, cart : false, bookings : false},
-    {departure:"Bruxelles", arrival :"Lyon", date :{ $date :"2023-09-19T12:14:39.891Z"}, price :144, cart : false, bookings : false},
-    {departure:"Marseille", arrival :"Lyon", date :{ $date :"2023-09-19T12:37:26.052Z"}, price :146, cart : false, bookings : false},
-    {departure:"Paris", arrival :"Lyon", date :{ $date :"2023-09-19T12:48:50.661Z"}, price :81, cart : false, bookings : false},
-    {departure:"Paris", arrival :"Bruxelles", date:{ $date :"2023-09-19T12:51:55.676Z"}, price :140, cart : false, bookings : false}
-
-]
-
+// EventListener sur le bouton Search - Page d'accueil
 
 let searchButton = document.querySelector('#search')
 
@@ -60,6 +42,8 @@ searchButton.addEventListener('click', () => {
         
         }
         
+        // Recup des données corrspondant à la recherche
+
         fetch('https://tickethack-back-end.vercel.app/trips/search', {
         
             method: 'POST',
@@ -74,6 +58,8 @@ searchButton.addEventListener('click', () => {
            console.log(data);
 
            if (!data[1]) {
+
+            // Affichage de l'absence de résultat si le fetch retourne un objet avec 1 seul élément : L'élément message
 
             document.querySelector('#resultcart').innerHTML = ` 
             
@@ -93,7 +79,7 @@ searchButton.addEventListener('click', () => {
 
             document.querySelector("#resultcart").innerHTML ='';
 
-            let tabresult = []
+            let tabresult = [] // Ce tableau sert uniqument d'affichage pour voir la liste des id de chaque ligne de résultat
 
             for (let i = 1; i < data.length; i++) {
 
@@ -221,4 +207,13 @@ searchButton.addEventListener('click', () => {
 });
 
 
+ // Récup de l'ensemble des trips disponibles dans la base pour valider le bon fonctionnement de la route
+ 
+ fetch('https://tickethack-back-end.vercel.app/cart')
+ .then(response => response.json())
+ .then(cartData => {
+   console.log('Cart : ' + cartData);
+ });
+
+ 
 
