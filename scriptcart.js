@@ -20,7 +20,7 @@
    
    `
 
-   document.querySelector('.totalcart').classList.add('invisible');
+   document.querySelector('.total').classList.add('invisible');
 
     } else {
     
