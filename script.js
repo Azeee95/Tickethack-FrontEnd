@@ -165,12 +165,35 @@ searchButton.addEventListener('click', () => {
                 element.addEventListener('click', () => {
 
                     let idSelector = '#' + element.id;
-                    console.log(idSelector);
+                    console.log(idSelector.substring(3, idSelector.length));
 
                     document.querySelector(idSelector).parentNode.parentNode.hidden=true
+            
+                    /*
+                    const dataCart = {
 
+                        _id: +(idSelector.substring(3, idSelector.length));
+                    
+                    }
 
-                })
+                    fetch('https://tickethack-back-end.vercel.app/trips/addcart', {      
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+        
+                    body: JSON.stringify(dataCart)
+        
+        
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                        console.log(data);
+
+                 */
+                
+
+                         })
+
+    
                 
             });
 
