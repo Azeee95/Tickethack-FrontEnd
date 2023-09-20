@@ -29,9 +29,6 @@
 
         for (let i = 0; i < cartData.length; i++) {
 
-            console.log('total actuel : ' + totalCart);
-            console.log('Price actuel ' + cartData[i].price);
-            
             totalCart = totalCart + cartData[i].price;
 
         document.querySelector('#carttrips').innerHTML +=
@@ -89,6 +86,7 @@
         `
 
         console.log('Total : ' + totalCart);
+        document.querySelector('#totalcart').textContent = `Total : ${totalCart} €`
 
     }
 
