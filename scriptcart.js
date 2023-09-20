@@ -19,8 +19,8 @@
    <p> Why not plan a trip ? </p> 
    
    `
+   document.querySelector('#totalcontainer').classList.add('invisible');
 
-   document.querySelector('.total').classList.add('invisible');
 
     } else {
     
