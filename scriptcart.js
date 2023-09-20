@@ -6,13 +6,15 @@
  .then(cartData => {
    console.log(cartData);
 
-   if (cartData == null) {
-
-    console.log('Résultats disponibles')
-
-    } else {
+   if (!cartData[0]) {
 
     console.log('Panier vide')
+
+
+    } else {
+    
+        console.log('Résultats disponibles')
+
     
     }
 
