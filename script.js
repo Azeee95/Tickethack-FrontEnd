@@ -99,6 +99,8 @@ searchButton.addEventListener('click', () => {
 
               //  console.log((data[i].date).substr(11, 5));
 
+              console.log(data[i]._id); 
+
                 document.querySelector("#resultcart").innerHTML += ` 
             
                 <nav aria-label="breadcrumb">
@@ -141,7 +143,7 @@ searchButton.addEventListener('click', () => {
                 
                       <li class="breadcrumb-item active" aria-current="page">
                 
-                        <button type="button" class="btn btn-success" style = 'margin-left: 40px;'>Book</button>
+                        <button type="button" class="btn btn-success btn-book" style = 'margin-left: 40px'>Book <span style = 'display : invisible'> ${data[i]._id} </span> </button>
                       
                     </li>
                 
