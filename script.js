@@ -171,10 +171,11 @@ searchButton.addEventListener('click', () => {
 
                     document.querySelector(idSelector).parentNode.parentNode.hidden=true
             
-                    /*
+                    // --
+
                     const dataCart = {
 
-                        _id: +(idSelector.substring(3, idSelector.length));
+                        _id: finalId
                     
                     }
 
@@ -188,9 +189,13 @@ searchButton.addEventListener('click', () => {
                     })
                         .then(response => response.json())
                         .then(data => {
+                            
                         console.log(data);
 
-                 */
+                        })
+
+
+                 // --
 
 
                          })
