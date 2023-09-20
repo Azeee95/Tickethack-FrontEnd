@@ -133,12 +133,24 @@
                 .then (() => {
 
                 console.log('Refresh du total nécessaire');
-                
+
                 // document.querySelector('#totalcart').textContent = `Total : ${totalCart} €`
 
+                // Refresh du total
 
+                const priceElements = document.querySelectorAll('.price')
+                
+                let newtotalprice = 0
+
+                priceElements.forEach(priceelement => {
+                
+                console.log(newtotalprice);
+
+                newtotalprice = newtotalprice + +(priceelement[i].text.trim().slice(0, this.length-1).trim())
 
                 })
+
+                document.querySelector('#totalcart').textContent = `Total : ${newtotalprice} €`
 
         })
 
