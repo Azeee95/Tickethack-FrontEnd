@@ -1,4 +1,8 @@
 /* INDEX.HTML*/
+.taillebloc {
+    height: 50vh;
+    width: 50vh;
+}
 
 .tickethack {
     color: #167347 ;
@@ -13,6 +17,8 @@
    margin-top: 14px;
    
 }
+
+
 
 
 
@@ -74,7 +80,8 @@ h1 {
 
 .textp {
     text-align: center;
-}
+    margin-top: 50px;
+} 
 
 /* .containerzone {
     
@@ -133,29 +140,25 @@ h1 {
 .center-div {
     background-color: #FFFEFF;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 
 .cartsize {
-    background-color: white;
     
+    background-color: white;
     min-width: 1000px;
     min-height: 20%;
+    height: 350px; 
+    overflow:scroll
 }
 
 .ol {
     background-color: #F7F1F1;
 }
 
-.cartsize2 {
-    display: flex;
-    min-width: 1000px;
-    
-    
-}
 
 .total {
     display: flex;
@@ -169,13 +172,11 @@ h1 {
 }
 
 
-.cartsize {
 
-    height: 300px;
-    width: 400px;
-}
 
 #resultcart {
-
+    display : flex;
+    flex-direction: column;
+    align-content:center;
     overflow-y: scroll
 }
