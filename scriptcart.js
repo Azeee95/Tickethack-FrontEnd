@@ -19,8 +19,8 @@
    <p> Why not plan a trip ? </p> 
    
    `
-   
 
+   document.querySelector('#totalcontainer').classList.add('invisible');
 
     } else {
     
@@ -153,18 +153,24 @@
 
                 })
 
-                document.querySelector('#totalcart').textContent = `Total : ${newtotalprice} €`
+            })
+
+            //    document.querySelector('#totalcart').textContent = `Total : ${newtotalprice} €`
 
         })
 
+    
          // --
-
-
 
     })
 
-}
+    }
+})
 
 
-});
+document.querySelector('#btn-purchase').addEventListener('click', () => {
 
+console.log('Button purchase clicked');
+
+
+})
