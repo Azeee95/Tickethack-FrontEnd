@@ -6,7 +6,7 @@
  .then(cartData => {
    console.log(cartData);
 
-   if (cartData[0].departure) {
+   if (cartData == null) {
 
     console.log('Résultats disponibles')
 
