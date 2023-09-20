@@ -85,10 +85,10 @@
         
         `
 
-        console.log('Total : ' + totalCart);
-        document.querySelector('#totalcart').textContent = `Total : ${totalCart} €`
-
     }
+
+    console.log('Total : ' + totalCart);
+    document.querySelector('#totalcart').textContent = `Total : ${totalCart} €`
 
     }
 
