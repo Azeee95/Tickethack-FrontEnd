@@ -106,7 +106,7 @@
 
             // Suppression du trip de la liste des résultats du cart
 
-            document.querySelector(idSelector).parentNode.parentNode.hidden=true
+            document.querySelector(idSelector).parentNode.parentNode.remove();
     
             // Suppression du trip du panier
 
